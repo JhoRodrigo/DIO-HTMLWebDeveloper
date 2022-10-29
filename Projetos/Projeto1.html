@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+</head>
+
+<body>
+    <h1 id="inicio"><abbr title="Módulo 1 - Primeiros Passos com HTML">Módulo 1 - Primeiros Passos com HTML</abbr></h1>
+    <hr />
+
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#historia">História dos computadores</a></li>
+        <li><a href="#client">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estrutura">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#links">Links de referências</a></li>
+    </ul>
+
+    <hr>
+    <h2 id="historia">História dos computadores <sup><small><a href="#inicio">(Voltar)</a></small></sup></h2>
+    <p>O primeiro computador <strong>foi criado entre 1943 e 1946</strong> e se chamava <i>Eletronic Numerical
+            Integrator and Computer — ENIAC </i>. Para o seu desenvolvimento, foi investido cerca de <u><i><strong>6
+                    milhões</strong></i></u> de dólares e seu funcionamento dependia de uma série de fatores, como 200
+        mil watts de energia.</p>
+    <p>
+        Um fator de grande importância é a memória, algo que não tinha na época do <strong>ENIAC</strong>. Cerca de 10
+        anos depois, foi lançado o <strong>RAMAX 305</strong>, uma máquina de armazenamento em disco feito pela
+        <strong>IBM</strong>. No começo, só empresas e certas instituições faziam uso de um computador e, com o passar
+        do tempo, essa tecnologia seria acessada por todos.
+    </p>
+
+    <hr>
+    <h2 id="client">O que são <i>Clients</i>? <sup><small><a href="#inicio">(Voltar)</a></small></sup></h2>
+    <p>Refere-se a tudo em um aplicativo web que é exibido ou ocorre no <u><strong>cliente (dispositivo do usuário
+                final)</strong></u>. Isso inclui o que o usuário vê, como <i>texto</i>, <i>imagens</i> e o resto da
+        <i>IU</i>, junto com quaisquer ações que um aplicativo execute no navegador do usuário.
+    </p>
+    <p>
+        Linguagens de marcação como HTML e CSS são interpretadas pelo navegador no lado do <strong>cliente</strong>.
+        Além disso, muitos desenvolvedores contemporâneos estão incluindo processos do lado do <strong>cliente</strong>
+        em sua arquitetura de aplicativos e deixando de fazer tudo no lado do servidor; a lógica de negócios para
+        páginas web dinâmicas, por exemplo, geralmente é executada no lado do <strong>cliente</strong> em um aplicativo
+        web moderno. Os processos do lado do <strong>cliente</strong> quase sempre são escritos em JavaScript.
+    </p>
+    <del>
+        <p>No exemplo a acima, <u><strong> o HTML, CSS e JavaScript </strong></u> que ditam como a página principal da
+            Netflix aparece para o usuário são interpretados pelo navegador no lado do <strong>cliente</strong>. A
+            página
+            também pode responder a "<u>eventos</u>": <strong><sub>por exemplo</sub></strong>, se o mouse do usuário
+            passar
+            sobre uma das imagens em miniatura do filme, a imagem se expande e as miniaturas adjacentes se movem
+            ligeiramente para um lado para abrir espaço para a imagem maior. Este é um exemplo de processo do lado do
+            <strong>cliente</strong>; o código dentro da própria página web responde ao mouse do usuário e inicia essa
+            ação
+            sem se comunicar com o servidor.
+        </p>
+    </del>
+    <p>O lado do <strong>cliente</strong> também é conhecido como <i>front-end</i>, embora esses dois termos não
+        signifiquem exatamente a mesma coisa. O lado do <strong>cliente</strong> se refere apenas ao local onde os
+        processos são executados, enquanto o <i>front-end</i> se refere aos tipos de processos que são executados no
+        lado do <strong>cliente</strong>.
+    </p>
+
+    <hr>
+    <h2 id="servers">O que são <i>Servers</i>? <sup><small><a href="#inicio">(Voltar)</a></small></sup></h2>
+    <p>Muito parecido com o lado do <i>cliente</i>, o "<u>lado do servidor</u>" significa tudo o que acontece no
+        <strong>servidor</strong>, em vez de no cliente. No passado, quase toda a lógica de negócios era executada no
+        lado do <strong>servidor</strong> e isso incluía renderizar páginas da web dinâmicas, interagir com bancos de
+        dados, autenticação de identidade e notificações push.
+    </p>
+    <p>O problema de hospedar todos esses processos no lado do <strong>servidor</strong> é que cada solicitação
+        envolvendo um deles tem que viajar desde o <i>cliente</i> até o <strong>servidor</strong>, todas as vezes. Isso
+        apresenta uma grande quantidade de latência. Por esse motivo, os aplicativos contemporâneos executam mais
+        códigos no lado do <i>cliente</i>; um caso de uso é renderizar páginas da web dinâmicas em tempo real,
+        executando scripts no navegador que fazem alterações no conteúdo que o
+        usuário vê.
+    </p>
+    <p>Como com <strong>"<u>front-end</u>"</strong> e <strong>"<u>lado do cliente</u>"</strong>, back-end também é um
+        termo para os processos que ocorrem no <strong>servidor</strong>, embora back-end se refira apenas aos tipos de
+        processos e lado do <strong>servidor</strong> se refira ao local onde os processos são executados.
+    </p>
+
+    <hr>
+    <h2 id="estrutura">Como é uma estrutura básica de um HTML? <sup><small><a href="#inicio">(Voltar)</a></small></sup>
+    </h2>
+
+    <p>
+        O padrão e sempre renomear o arquivo principal por "<u><strong>index</strong></u>" ele
+        consistes em três partes:
+    </p>
+    <strong>
+        <ol>
+            <h4>
+                <li>HTML</li>
+            </h4>
+            <h4>
+                <li>HEAD</li>
+            </h4>
+            <h4>
+                <li>BODY</li>
+            </h4>
+        </ol>
+    </strong>
+    <p>
+        <font size="5" color="red">O <i>HTML</i> e o documento do nosso site.</font>
+    </p>
+    <p>
+        <font size="5" color="green">O <i>HEAD</i> e o cabeçalho ele carrega antes do body, é nele onde podemos incluir
+            a tag "title".</font>
+    </p>
+    <p>
+        <font size="5" color="yellow">O <i>BODY</i> e o corpo e nele que colocamos toda as informações de texto imagens
+            etc...</font>
+    </p>
+
+    <hr>
+    <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas <sup><small><a
+                    href="#inicio">(Voltar)</a></small></sup></h2>
+    <p>
+        As <mark><strong>listas não numeradas</strong></mark> são usadas para listar itens, sem se preocupar com sua
+        sequência.
+    </p>
+    <p>
+        As <mark><strong>listas ordenadas ou numeradas</strong></mark> são usadas para indicar alguma sequência ou
+        numeração.
+    </p>
+
+    <p>
+        Chamamos de lista de marcadores apenas.
+    </p>
+    <p>As tags usadas para criar uma lista não ordenada são:</p>
+    <h3>
+        <blockquote>ul</blockquote>
+    </h3>
+    <h3>
+        <blockquote>li</blockquote>
+    </h3>
+    <p> Tag <strong>"ul"</strong> é usada definir a lista e a tag <strong>"li"</strong> é usada para
+        cada item da
+        lista</p>
+
+    <hr>
+    <h2 id="links">Links de referências <sup><small><a href="#inicio">(Voltar)</a></small></sup></h2>
+    <p>Sites onde podemos procurar mais referências sobre os assuntos</p>
+    <ul>
+        <h5>
+            <li><a href="https://www.devmedia.com.br/trabalhando-com-listas-ordenadas-no-html/21739">Listas</a></li>
+        </h5>
+        <h5>
+            <li><a href="https://www.cloudflare.com/pt-br/learning/serverless/glossary/client-side-vs-server-side/">Cliente
+                    X Servidor</a></li>
+        </h5>
+        <h6>
+            <li><a href="http://dio.me">http://dio.me</a></li>
+        </h6>
+        <h6>
+            <li><a href="http://w3c.org">http://w3c.org</a></li>
+        </h6>
+
+    </ul>
+
+</body>
+
+</html>
