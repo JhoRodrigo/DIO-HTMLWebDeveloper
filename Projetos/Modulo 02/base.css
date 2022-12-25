@@ -20,7 +20,7 @@ body {
 }
 .menu {
     width: 20%;
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     padding: 10px 20px 0px;
 }
 .header {
@@ -31,6 +31,7 @@ body {
     background-color: white;
     min-height: 300px;
     padding: 20px;
+    text-align: center;
 }
 .footer {
     background-color: rgb(99, 56, 240);
@@ -62,4 +63,23 @@ body {
 
 .footerTexto {
     color: #f1f1f1;
+}
+
+thead {
+    background-color:darkgrey ;
+    color: #f1f1f1;
+    
+}
+
+.precos {
+    text-align: center;
+    width: 100%;
+}
+
+.precos td {
+    border: 1px solid black;
+}
+
+.precos tbody:nth-child(even){
+    background:rgb(184, 201, 201) ;
 }
